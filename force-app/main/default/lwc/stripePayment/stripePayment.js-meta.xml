@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Stripe Payment</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="paymentAmountField" type="String" label="Payment Amount Field" description="API name of the payment source field. Its determitane Amount of mayment (e.g. Amount__c)" required="true"/>
+            <property name="bankPayerField" type="String" label="Bank Payer Field" description="API name of the Account or Contact field which we take Bank Accounts (e.g. AccountId__c)" />
+            <property name="creditCardPayerFied" type="String" label="Credit Card Payer Field" description="API name of the Account or Contact field which we take Cards (e.g. AccountId__c)" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

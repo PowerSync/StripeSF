@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Stripe_CVC_Error</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: CVC Error</shortDescription>
+        <value>Please enter a valid CVV/CVC number</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_CVC_help_text</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: CVC help text</shortDescription>
+        <value>help text</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Card_Number</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Card Number</shortDescription>
+        <value>Card Number</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Card_Number_Error</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Card Number Error</shortDescription>
+        <value>Please enter a valid credit card number</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Error_Payment_Message</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Error Payment Message</shortDescription>
+        <value>Error Message</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Expiry</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Expiry</shortDescription>
+        <value>Expiry</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Expiry_Error</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Expiry Error</shortDescription>
+        <value>Please enter a valid date in the future</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Full_Name</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Full Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Full_Name_Error</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Full Name Error</shortDescription>
+        <value>Please enter your name as it appears on your card</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Payment_button</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Payment button</shortDescription>
+        <value>Collect Payment</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Receipt_button</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Receipt button</shortDescription>
+        <value>Get Receipt</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_Success_Payment_Message</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Success Payment Message</shortDescription>
+        <value>Success Payment</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_cvc</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: cvc</shortDescription>
+        <value>CVV/CVC</value>
+    </labels>
+    <labels>
+        <fullName>Stripe_payment</fullName>
+        <categories>Stripe payment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stripe: Payment header</shortDescription>
+        <value>Stripe payment</value>
+    </labels>
+</CustomLabels>

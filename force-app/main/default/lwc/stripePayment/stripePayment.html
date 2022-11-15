@@ -1,0 +1,50 @@
+<template>
+    <lightning-card >
+        <!-- title={labels.StripePaymentHeader} -->
+        <div class="loader" if:true={loader}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+
+        <lightning-tabset variant="scoped"> 
+            <lightning-tab label="Card">
+                <!-- <div class="slds-card slds-box"> -->
+                    <c-card-input oncomplete={paymentComplite} onincomplete={paymentInComplite}></c-card-input>
+                <!-- </div> -->
+
+                <div if:false={isPayment} class="slds-card slds-box" style="text-align: right;">
+                    <lightning-button 
+                        variant="brand" 
+                        label={labels.StripePaymentButton} 
+                        title="Primary action" 
+                        onclick={handlerPayment}
+                        class="slds-var-m-right_x-large" 
+                        >
+                    </lightning-button>
+                </div>
+                
+                <div if:true={isPayment} class="slds-card" style="text-align: right;">
+                    <lightning-button
+                        variant="brand" 
+                        label={labels.StripeReceiptButton}
+                        title="Primary action" 
+                        onclick={handlerReceipt}
+                        class="slds-var-m-right_x-large">
+                    </lightning-button>
+                </div>
+            </lightning-tab>
+
+            <lightning-tab label="Bank Account">
+                <c-stripe-bank-account 
+                    payment-amount={paymentAmount}
+                    payment-currency="USD"
+                    payment-record-id={recordId}
+                    bank-account-owner-id={payerId}
+                    oncomplete={bankPaymentComplite} 
+                    onincomplete={bankPaymentIncomplite}
+                ></c-stripe-bank-account>
+            </lightning-tab>
+
+        </lightning-tabset>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "Stripe Integration (by PowerSync)",
+            "versionName": "ver 1.0",
+            "versionNumber": "1.0.0.NEXT"
+        }
+    ],
+    "name": "StripePaymentByPowerSync",
+    "namespace": "tnw_sf_stripe",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "55.0",
+    "packageAliases": {
+        "Stripe Integration (by PowerSync)": "0Ho8V000000oLlwSAE",
+        "Stripe Integration (by PowerSync)@1.0.0-1": "04t8V000001NbVFQA0",
+        "Stripe Integration (by PowerSync)@1.0.0-2": "04t8V000001NbZhQAK"
+    }
+}

@@ -1,0 +1,41 @@
+<template>
+    <lightning-card  title="Stripe Configuration">
+        <div class="loader" if:true={loader}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </div>
+        <div class="slds-var-m-top_medium slds-var-m-bottom_x-large">
+            <div class="slds-var-p-around_medium lslds-grid">
+                <div class="slds-col slds-var-p-horizontal_medium">
+                    <lightning-input type="text" 
+                            placeholder="https://www.google.com/" 
+                            label="Base URL"
+                            data-id="baseUrl"
+                            value={baseUrl}>
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-var-p-horizontal_medium">
+                    <lightning-input type="text" 
+                            placeholder="" 
+                            label="Secret Key"
+                            data-id="secKey"
+                            value={secretKey}>
+                    </lightning-input>
+                </div>
+            </div>
+            <lightning-button variant="brand" 
+                    label="Save" 
+                    title="Primary action" 
+                    onclick={handleSave} 
+                    class="slds-var-m-left_x-large">
+            </lightning-button>
+            <lightning-button
+                variant="brand" 
+                label="Test Connection" 
+                title="Primary action" 
+                onclick={handleConnection} 
+                class="slds-var-m-left_x-large">
+            </lightning-button>
+        </div>
+        
+    </lightning-card>
+</template>
